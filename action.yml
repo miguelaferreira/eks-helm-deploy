@@ -43,7 +43,7 @@ inputs:
         default: 5m0s
 runs:
     using: 'docker'
-    image: 'docker://peymanmo/eks-helm-deploy:v2'
+    image: 'ghcr.io/miguelaferreira/eks-helm-deploy:latest'
     env:
         AWS_REGION: ${{ inputs.aws-region }}
         AWS_SECRET_ACCESS_KEY: ${{ inputs.aws-secret-access-key }}
